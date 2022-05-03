@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-mongoose-generator": "^3.1.0",
+    "g": "^2.0.1",
+    "gen": "^2.0.1",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8",
+    "nodemon": "^2.0.15",
+    "validate": "^5.2.0",
+    "validator": "^13.7.0",
+    "winston": "^3.7.2",
+    "winston-mongodb": "^5.0.7"
+  },
+  "scripts": {
+    "start": "TZ='UTC'+03:00 node index.js"
+  }
+}

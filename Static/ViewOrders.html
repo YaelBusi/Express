@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./Style/ShoppingBag.css" rel="stylesheet" />
+    <template id="temp-row">
+        <tr class="item-row">
+            <td>
+                <div class="quntitydate"></div>
+            </td>
+            <td class="availabilityColumn">
+                <p class="price"></p>
+            </td>
+            <td><select class="products"></select></td>
+            <td>
+                <div class="amount"></div>
+            </td>
+        </tr>
+    </template>
+</head>
+
+<body onload="getOrders()">
+    <h3>ההזמנות שלך: </h3>
+    <div class="cistGroup">
+        <table id="items" class="items">
+            <thead>
+                <tr>
+                    <th class="itemsColumn" colspan="2">תאריך </th>
+                    <th class="quntity">מחיר</th>
+                    <th class="totalColum">מוצרים</th>
+                    <th class="amountColum">כמות מוצרים</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <p>כמות ההזמנות שלך: </p>
+        <p id="countOrder"></p>
+    </div>
+    <button><a href="Products.html">חזרה לדף הבית</a></button>
+    <script src="./scripts/ViewOrders.js"></script>
+</body>
+
+</html>
