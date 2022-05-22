@@ -43,6 +43,7 @@ function Rool() {
 function login() {
     var email = document.getElementById("Dmail").value;
     var password = document.getElementById("Dpassword").value;
+    if(email!=""&&password!=""){
     fetch('../api/user/' + email + "/" + password)
         .then(res => {
             if (res.ok && res != null && res.status != 502)
@@ -63,6 +64,10 @@ function login() {
             }
         }
         )
+    }
+    else{
+        alert("this user is undefined 🙄, enter user  ");
+    }
 };
 
 function rooling() {
